@@ -1,0 +1,174 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #F8F8F8;
+  color: #1a1a1a;
+  overflow: hidden;
+}
+
+/* React Flow Customization */
+.react-flow__node {
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.react-flow__node:hover {
+  transform: scale(1.02);
+}
+
+.react-flow__handle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #4ECDC4;
+  border: 2px solid #fff;
+  transition: all 0.2s ease;
+}
+
+.react-flow__handle:hover {
+  width: 14px;
+  height: 14px;
+}
+
+.react-flow__edge-path {
+  stroke: #4ECDC4;
+  stroke-width: 2;
+}
+
+.react-flow__edge.animated path {
+  stroke-dasharray: 5;
+  animation: dashdraw 0.5s linear infinite;
+}
+
+.react-flow__edge.selected .react-flow__edge-path {
+  stroke: #FF6B6B;
+  stroke-width: 3;
+}
+
+@keyframes dashdraw {
+  from {
+    stroke-dashoffset: 10;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+/* Grid Background */
+.canvas-grid {
+  background-color: #F8F8F8;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+/* Node Glow Effect */
+.node-success {
+  box-shadow: 0 0 20px rgba(107, 207, 127, 0.5);
+}
+
+.node-error {
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.5);
+}
+
+.node-running {
+  box-shadow: 0 0 20px rgba(78, 205, 196, 0.5);
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+/* Animations */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply bg-primary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-200 font-medium;
+}
+
+.btn-secondary {
+  @apply bg-secondary text-white px-4 py-2 rounded-lg hover:bg-opacity-90 transition-all duration-200 font-medium;
+}
+
+.btn-outline {
+  @apply border-2 border-gray-300 text-gray-700 px-4 py-2 rounded-lg hover:border-primary hover:text-primary transition-all duration-200 font-medium;
+}
+
+/* Input Styles */
+.input-field {
+  @apply w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-secondary focus:border-transparent transition-all duration-200;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-node p-4 hover:shadow-node-hover transition-all duration-200;
+}
+
+/* Toast Customization */
+.Toastify__toast {
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.Toastify__toast--success {
+  background-color: #6BCF7F;
+}
+
+.Toastify__toast--error {
+  background-color: #FF6B6B;
+}
+
+.Toastify__toast--warning {
+  background-color: #FFB547;
+}
