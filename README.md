@@ -2,11 +2,7 @@
 
 ![alt text](https://www.daulathussain.com/wp-content/uploads/2025/10/Build-Deploy-Web3-Workflow-Builder-DApp-Next.js-Solidity-Node.js-TypeScript-Blockchain-AI-DApp-Project.jpg)
 
-- [Final Source Code](https://www.theblockchaincoders.com/sourceCode/build-and-deploy-web3-workflow-builder-dapp-or-next.js-solidity-node.js-typescript-or-blockchain-ai-dapp-project)
 
-#### Setup Video
-
-- [Final Code Setup video](https://youtu.be/nBf3JGvT34Y?si=UilhZZXgPEg7mvdi)
 
 ## Project Overview
 
@@ -108,14 +104,4 @@ If you download the final source code then you can follow the following instruct
   URL: https://www.alchemy.com/
 ```
 
-## Important Links
 
-- [Get Pro Blockchain Developer Course](https://www.theblockchaincoders.com/pro-nft-marketplace)
-- [Support Creator](https://bit.ly/Support-Creator)
-- [All Projects Source Code](https://www.theblockchaincoders.com/SourceCode)
-
-## Authors
-
-- [@theblockchaincoders.com](https://www.theblockchaincoders.com/)
-- [@consultancy](https://www.theblockchaincoders.com/consultancy)
-- [@youtube](https://www.youtube.com/@daulathussain)
